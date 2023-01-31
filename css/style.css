@@ -1,0 +1,317 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F3;
+
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #F3F3F3;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 22px 0px 22px;
+}
+
+header div:first-child {
+    width: 75px;
+    height: 53px;
+    background-image: url("../imagens/logo1.png");
+    background-size: contain;
+}
+
+header ion-icon {
+    font-size: 42px;
+}
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 18px 0px 18px;
+}
+
+footer ion-icon {
+    font-size: 26px;
+}
+
+footer input {
+    width: 80%;
+    height: 30px;
+    border: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+footer input:focus {
+    outline: 0;
+}
+
+footer input::placeholder {
+    color: #000000;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #505050
+}
+
+main {
+    margin: 104px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>div {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 2px;
+    margin: 2px 0px 2px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 3px 8px 3px;
+}
+
+main>div .hora {
+    color: #aaaaaa
+}
+
+main>div .usuario strong {
+    font-weight: 700;
+}
+
+main .status {
+    background-color: #DCDCDC;
+}
+
+main .normais {
+    background-color: #ffffff;
+}
+
+main .reservadas {
+    background-color: #FFDEDE;
+}
+
+main>div span {
+    margin: 0px 2px 0px 2px;
+}
+
+
+aside {
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+
+
+aside>div:first-child {
+    background: transparent;
+    width: 30%;
+    height: 100%;
+
+
+
+}
+
+aside>div:last-child {
+    background: #ffffff;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 10px 17px;
+    overflow-y: scroll;
+}
+
+aside h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 26px
+}
+
+aside>div>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+
+}
+
+#participantes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#participantes>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+aside ion-icon {
+    font-size: 20.31px;
+}
+
+aside>div>div ion-icon:last-child {
+    font-size: 15px;
+    color: #28bb25;
+    visibility: hidden;
+}
+
+.selecionadoPart ion-icon:last-child {
+    visibility: visible;
+}
+
+.selecionadoVisib ion-icon:last-child {
+    visibility: visible;
+}
+
+aside p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    width: 75%;
+    margin: 0px 5px 0px 5px;
+}
+
+
+
+.inicial {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.inicial div:first-child {
+    width: 130px;
+    height: 92px;
+    background-image: url(../imagens/logo2.png);
+    background-size: contain;
+    margin: 72px 0px 47px 0px;
+}
+
+.inicial input {
+    width: 261px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #AEAEAE;
+    margin: 47px 0px 7.5px 0px;
+}
+
+
+.inicial button {
+    width: 109px;
+    height: 45px;
+    background: #E7E7E7;
+    border-radius: 9px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #696969;
+    margin: 7.5px 0px 7.5px 0px;
+}
+
+.inicial div:nth-child(2) {
+    width: 250px;
+    height: 250px;
+    background-image: url(../imagens/load.gif);
+
+    background-size: contain;
+}
+
+.inicial p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.inicial.hide {
+    display: none;
+}
